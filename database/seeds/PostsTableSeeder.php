@@ -16,7 +16,7 @@ class PostsTableSeeder extends Seeder
         for ($i= 0; $i < 10; $i++) {
             $post = new Post();
             $post->title = $faker->words(7, true);
-            $post->content = $faker->text();
+            $post->content = $faker->text(500);
             $post->slug = Str::of($post->title)->slug("-");
             $post->published = rand(0,1);
 

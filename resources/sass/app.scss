@@ -1,8 +1,58 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 150px;
+    text-align: center;
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .post {
+        width: 500px;
+        height: 400px;
+        padding: 5px;
+        margin: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        &-title {
+          height: 70px;
+        }
+        &-content {
+          height: 250px;
+        }
+    }
+}
+
+.buttons {
+    .btn {
+        color: #fff;
+        &-show {
+            background-color: #2680bd;
+        }
+        &-edit {
+            background-color: #26bd65;
+        }
+        &-delete {
+            background-color: #bd2b26;
+        }
+    }
+}

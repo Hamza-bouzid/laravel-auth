@@ -10962,3 +10962,56 @@ a.text-dark:focus {
   }
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 150px;
+  text-align: center;
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.posts .post {
+  width: 500px;
+  height: 400px;
+  padding: 5px;
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.posts .post-title {
+  height: 70px;
+}
+
+.posts .post-content {
+  height: 250px;
+}
+
+.buttons .btn {
+  color: #fff;
+}
+
+.buttons .btn-show {
+  background-color: #2680bd;
+}
+
+.buttons .btn-edit {
+  background-color: #26bd65;
+}
+
+.buttons .btn-delete {
+  background-color: #bd2b26;
+}
+
