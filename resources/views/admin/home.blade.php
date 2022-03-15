@@ -15,6 +15,10 @@
                     @endif
                     
                     {{ __('You are logged in!')  }} {{ Auth::user()->name}}
+                    <div>
+                        <a href="#">Go to Posts</a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
