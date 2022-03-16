@@ -14,9 +14,12 @@
                         </div>
                     @endif
                     
-                    {{ __('You are logged in!')  }} {{ Auth::user()->name}}
                     <div>
-                        <a href="#">Go to Posts</a>
+                        {{ __('You are logged in!')  }} {{ Auth::user()->name}}
+                    </div>
+                    
+                    <div>
+                        <a href="{{route('admin.posts.index')}}"><button class="btn btn-show">Go to Posts</button></a>
                     </div>
                     
                 </div>
